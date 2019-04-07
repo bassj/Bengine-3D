@@ -73,18 +73,8 @@ public class Magica extends Game {
 
 			@Override
 			protected void onLoaded(AssetManager assets) {
-				State newState = null;
-				
-				System.out.println(demo);
-				
-				if (demo == "Skeletal Animation") {
-					newState = new ChickenAnimationTestState(assets);
-				} else if (demo == "Chicken Demo") {
-					newState = new ChickenDemoState(assets, playerName, addr);
-				} else if (demo == "Collision Demo") {
-					newState = new MagicaGame(assets);
-				}
-				
+				State newState = new MagicaGame(assets);
+
 				switchState(newState);
 			}
 			
@@ -103,7 +93,7 @@ public class Magica extends Game {
 		//loader.addAsset("grassTexture", new Texture(new File("./assets/textures/Grass.png")));
 		loader.addAsset("shadowShader", new Shader(new File("./assets/shader/shadow.json")));
 		loader.addAsset("skyboxShader", new Shader(new File("./assets/shader/skybox.json")));
-		loader.addAsset("skybox", new CubeMap(new File("./assets/skybox/ely_cloudtop.json")));
+		loader.addAsset("skybox", new CubeMap(new File("./assets/skybox/ulukai.json")));
 		
 		
 		loader.addAssets(new File("./assets/chickendemo.assets"));

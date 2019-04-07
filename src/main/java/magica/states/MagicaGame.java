@@ -2,6 +2,7 @@ package magica.states;
 
 import static org.lwjgl.glfw.GLFW.*;
 
+import magica.entities.*;
 import org.joml.Vector3f;
 
 import bengine.Game;
@@ -17,10 +18,6 @@ import bengine.rendering.Material;
 import bengine.rendering.renderers.Renderer;
 import bengine.rendering.renderers.SceneRenderer;
 import bengine.rendering.renderers.steps.ShadowEntityStep;
-import magica.entities.CubeEntity;
-import magica.entities.GrassPlane;
-import magica.entities.Player;
-import magica.entities.SphereEntity;
 
 public class MagicaGame implements State {
 
@@ -58,14 +55,11 @@ public class MagicaGame implements State {
 			((Model) assets.getAsset("cubeModel")).getMeshes()[0]
 		);
 		
-		Player player = new Player();
-		
-		Entity plane = new GrassPlane();
+		Freecam player = new Freecam(new Vector3f(0, 1.5f, 0));
 		
 		Entity cube = new CubeEntity();
 		
 		this.scene.setSky(sky);
-		this.scene.addEntity(plane);
 		this.scene.addEntity(player);
 		this.scene.addEntity(cube);
 		

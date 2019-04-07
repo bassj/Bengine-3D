@@ -1,0 +1,12 @@
+Upgrade the rendering pipeline to be physically base.
+    -Create a simple test state with some spheres to examine.
+        *Create a freecam class.
+    -Research and write some PBR Shaders
+
+
+
+Switch the engine over to an ECS model.
+Document the engine.
+Learn and Switch to vulkan.
+Re-examine multiplayer mechanism.
+

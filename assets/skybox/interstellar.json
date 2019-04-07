@@ -1,0 +1,8 @@
+{
+	"top": "./assets/skybox/interstellar/ypos.png",
+	"bottom": "./assets/skybox/interstellar/yneg.png",
+	"left": "./assets/skybox/interstellar/xneg.png",
+	"right": "./assets/skybox/interstellar/xpos.png",
+	"front": "./assets/skybox/interstellar/zneg.png",
+	"back": "./assets/skybox/interstellar/zpos.png"
+}

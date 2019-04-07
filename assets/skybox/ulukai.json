@@ -1,0 +1,8 @@
+{
+	"top": "./assets/skybox/ulukai/corona_dn.png",
+	"bottom": "./assets/skybox/ulukai/corona_up.png",
+	"left": "./assets/skybox/ulukai/corona_lf.png",
+	"right": "./assets/skybox/ulukai/corona_rt.png",
+	"front": "./assets/skybox/ulukai/corona_ft.png",
+	"back": "./assets/skybox/ulukai/corona_bk.png"
+}

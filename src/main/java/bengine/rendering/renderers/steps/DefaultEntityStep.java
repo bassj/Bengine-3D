@@ -39,9 +39,11 @@ public class DefaultEntityStep extends RenderStep<Entity>{
 		Matrix4f transformMatrix = new Matrix4f().identity();
 		
 		transformMatrix.mul(e.transform.generateMatrix());
-		
-		drawNode(e.getModel().getRootNode(), e, transformMatrix);
-		
+
+		if (e.getModel() != null) {
+			drawNode(e.getModel().getRootNode(), e, transformMatrix);
+		}
+
 		e.onDraw();
 	}
 	
