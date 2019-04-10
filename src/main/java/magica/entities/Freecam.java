@@ -8,8 +8,7 @@ import bengine.input.Mouse;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
 
-import static org.lwjgl.glfw.GLFW.GLFW_KEY_S;
-import static org.lwjgl.glfw.GLFW.GLFW_KEY_W;
+import static org.lwjgl.glfw.GLFW.*;
 
 public class Freecam extends Entity {
 
@@ -57,6 +56,16 @@ public class Freecam extends Entity {
         if (Keyboard.isKeyDown(GLFW_KEY_S)) {
             movement.add(this.transform.forwards().mul(-movementSpeed * delta));
         }
+
+        if (Keyboard.isKeyDown(GLFW_KEY_A)) {
+            movement.add(this.transform.right().mul(-movementSpeed * delta));
+        }
+
+        if (Keyboard.isKeyDown(GLFW_KEY_D)) {
+            movement.add(this.transform.right().mul(movementSpeed * delta));
+        }
+
+        this.transform.position.add(movement);
 
         this.c.transform.position = this.transform.position;
         this.c.transform.rotation = this.transform.rotation;

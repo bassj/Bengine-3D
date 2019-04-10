@@ -93,7 +93,7 @@ public class Magica extends Game {
 		//loader.addAsset("grassTexture", new Texture(new File("./assets/textures/Grass.png")));
 		loader.addAsset("shadowShader", new Shader(new File("./assets/shader/shadow.json")));
 		loader.addAsset("skyboxShader", new Shader(new File("./assets/shader/skybox.json")));
-		loader.addAsset("skybox", new CubeMap(new File("./assets/skybox/ulukai.json")));
+		loader.addAsset("skybox", new CubeMap(new File("./assets/skybox/bluecloud.json")));
 		
 		
 		loader.addAssets(new File("./assets/chickendemo.assets"));

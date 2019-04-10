@@ -55,13 +55,13 @@ public class MagicaGame implements State {
 			((Model) assets.getAsset("cubeModel")).getMeshes()[0]
 		);
 		
-		Freecam player = new Freecam(new Vector3f(0, 1.5f, 0));
+		Freecam player = new Freecam(new Vector3f(0, 0, -2.0f));
 		
-		Entity cube = new CubeEntity();
+		Entity sphere = new SphereEntity();
 		
 		this.scene.setSky(sky);
 		this.scene.addEntity(player);
-		this.scene.addEntity(cube);
+		this.scene.addEntity(sphere);
 		
 		this.game = game;
 	}

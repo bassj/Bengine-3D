@@ -36,7 +36,7 @@ public class CubeMap extends Texture {
 		this.textureHandle = glGenTextures();
 		
 		glBindTexture(GL_TEXTURE_CUBE_MAP, textureHandle);
-		
+
 		for (int i = 0; i < textureData.length; i++) {
 			glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGBA8, this.widths[i], this.heights[i], 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData[i]);
 		}
@@ -62,7 +62,7 @@ public class CubeMap extends Texture {
 				String rightPath = cubemap.get("right").asString();
 				String frontPath = cubemap.get("front").asString();
 				String backPath = cubemap.get("back").asString();
-				
+
 				this.widths = new int[6];
 				this.heights = new int[6];
 				

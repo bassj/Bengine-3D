@@ -1,9 +1,10 @@
 Upgrade the rendering pipeline to be physically base.
-    -Create a simple test state with some spheres to examine.
-        *Create a freecam class.
+    -Create a simple test state with some spheres to examine. - Done
+        *Create a freecam class. - Done
     -Research and write some PBR Shaders
 
 
+Fix issue with coordinate system.
 
 Switch the engine over to an ECS model.
 Document the engine.
